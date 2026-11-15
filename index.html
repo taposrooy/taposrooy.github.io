@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>taposrooy</title>
+<meta name="description" content="Personal site of taposrooy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F3F5F7;
+    --ink: #1C2430;
+    --muted: #59636F;
+    --rule: #C9D0D8;
+    --link: #2340A8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #12161C;
+      --ink: #E3E7EC;
+      --muted: #98A2AF;
+      --rule: #2C343E;
+      --link: #9DB2FF;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.125rem/1.65 Literata, Georgia, "Times New Roman", serif;
+    font-optical-sizing: auto;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  main {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: clamp(2rem, 8vw, 6rem) clamp(1.25rem, 5vw, 2rem) 3rem;
+  }
+
+  h1 {
+    margin: 0 0 2.5rem;
+    font-weight: 800;
+    font-size: clamp(3.25rem, 15vw, 7.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+    overflow-wrap: anywhere;
+  }
+
+  .lede {
+    max-width: 34rem;
+    margin: 0 0 4.5rem;
+    font-size: 1.25rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    column-gap: 1.5rem;
+    padding: 1.25rem 0 2.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.65;
+  }
+
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  li {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    column-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  li:last-child { margin-bottom: 0; }
+
+  .key {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  li p { margin: 0; }
+  .desc { color: var(--muted); }
+
+  a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  footer {
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  @media (max-width: 40rem) {
+    section { grid-template-columns: 1fr; }
+    h2 { margin-bottom: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>taposrooy</h1>
+
+  <!-- EDIT: write two or three sentences about yourself. -->
+  <p class="lede">I build things with software and keep them here. The site is small on purpose, and I add to it when I have something worth showing.</p>
+
+  <section>
+    <h2>Work</h2>
+    <!-- EDIT: replace each entry with something you made. Copy an <li> to add more. -->
+    <ul>
+      <li>
+        <span class="key">2026</span>
+        <div>
+          <p><a href="#">Project one</a></p>
+          <p class="desc">A short note on what it is and who it’s for.</p>
+        </div>
+      </li>
+      <li>
+        <span class="key">2025</span>
+        <div>
+          <p><a href="#">Project two</a></p>
+          <p class="desc">One sentence on what you learned or why you made it.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul>
+      <li>
+        <span class="key">GitHub</span>
+        <p><a href="https://github.com/taposrooy">github.com/taposrooy</a></p>
+      </li>
+      <li>
+        <span class="key">Email</span>
+        <!-- EDIT: put your real email address in both places below. -->
+        <p><a href="mailto:you@example.com">you@example.com</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>© 2026 taposrooy</footer>
+
+</main>
+</body>
+</html>
